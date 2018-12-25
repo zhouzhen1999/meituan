@@ -66,7 +66,8 @@ header {
     margin: 0 .2rem; }
 
 section {
-  flex: 1; }
+  flex: 1;
+  overflow: auto; }
 
 .section-search {
   width: 100%;
@@ -91,7 +92,7 @@ section {
 
 .swiper-slide {
   width: 90%;
-  height: auto;
+  height: 2rem;
   display: flex;
   padding: 0 .15rem;
   flex-wrap: wrap; }
@@ -113,3 +114,72 @@ section {
   top: .05rem; }
   #round span {
     background: #FFCA48; }
+
+.section-bscroll {
+  width: 100%;
+  height: auto; }
+
+.section-bscroll-title {
+  width: 95%;
+  height: 0.5rem;
+  line-height: .5rem;
+  color: #fff;
+  background: #FE3A30;
+  margin-left: .1rem; }
+  .section-bscroll-title p {
+    margin-left: .15rem;
+    font-size: .2rem; }
+
+.wrapper {
+  width: 3.5rem;
+  height: auto;
+  overflow: hidden; }
+  .wrapper .container {
+    width: 9rem;
+    height: auto;
+    display: flex;
+    padding: 0 .1rem; }
+    .wrapper .container dl {
+      margin-left: .2rem; }
+      .wrapper .container dl dt img {
+        width: 1rem;
+        height: auto; }
+      .wrapper .container dl dd p {
+        width: 1rem;
+        height: auto;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        color: #666;
+        line-height: 2; }
+        .wrapper .container dl dd p:nth-of-type(2) span {
+          color: #FE3A30;
+          margin-left: .05rem; }
+          .wrapper .container dl dd p:nth-of-type(2) span:nth-of-type(2) {
+            border: 1px solid #FE3A30;
+            border-radius: .05rem; }
+
+.section-banner {
+  width: 100%;
+  height: 0.4rem; }
+  .section-banner img {
+    width: 100%;
+    height: auto; }
+
+footer {
+  width: 100%;
+  height: 0.3rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 .2rem;
+  font-size: .2rem;
+  color: #666; }
+  footer li {
+    text-align: center; }
+  footer img {
+    width: 30%;
+    height: auto;
+    margin-left: .05rem; }
+  footer span p:active {
+    color: orange; }

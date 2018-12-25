@@ -90,6 +90,7 @@ header {
 
 section {
     flex: 1;
+    overflow: auto;
 }
 
 .section-search {
@@ -118,7 +119,7 @@ section {
 
 .swiper-slide {
     @include num(90%,
-    auto);
+    2rem);
     display: flex;
     padding: 0 .15rem;
     flex-wrap: wrap;
@@ -144,5 +145,100 @@ section {
     top: .05rem;
     span {
         background: #FFCA48;
+    }
+}
+
+.section-bscroll {
+    @include num(100%,
+    auto);
+}
+
+.section-bscroll-title {
+    @include num(95%,
+    .5rem);
+    line-height: .5rem;
+    color: #fff;
+    background: #FE3A30;
+    margin-left: .1rem;
+    p {
+        margin-left: .15rem;
+        font-size: .2rem;
+    }
+}
+
+.wrapper {
+    @include num(3.5rem,
+    auto);
+    overflow: hidden;
+    .container {
+        @include num(9rem,
+        auto);
+        display: flex;
+        padding: 0 .1rem;
+        dl {
+            margin-left: .2rem;
+            dt {
+                img {
+                    @include num(1rem,
+                    auto);
+                }
+            }
+            dd {
+                p {
+                    @include num(1rem,
+                    auto);
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                    white-space: nowrap;
+                    color: #666;
+                    line-height: 2;
+                    &:nth-of-type(2) {
+                        span {
+                            color: #FE3A30;
+                            margin-left: .05rem;
+                            &:nth-of-type(2) {
+                                border: 1px solid #FE3A30;
+                                border-radius: .05rem;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.section-banner {
+    @include num(100%,
+    .4rem);
+    img {
+        @include num(100%,
+        auto);
+    }
+}
+
+footer {
+    @include num(100%,
+    .3rem);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 .2rem;
+    font-size: .2rem;
+    color: #666;
+    li {
+        text-align: center;
+    }
+    img {
+        @include num(30%,
+        auto);
+        margin-left: .05rem;
+    }
+    span {
+        p {
+            &:active {
+                color: orange;
+            }
+        }
     }
 }

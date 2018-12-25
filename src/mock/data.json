@@ -1,83 +1,91 @@
 [{
-    "list": [{
-            "img": "./images/pic1.png",
-            "title": "美食"
-        },
-        {
-            "img": "./images/pic2.png",
-            "title": "超市便利"
-        },
-        {
-            "img": "./images/pic3.png",
-            "title": "生鲜果蔬"
-        },
-        {
-            "img": "./images/pic4.png",
-            "title": "美团专送"
-        },
-        {
-            "img": "./images/pic5.png",
-            "title": "跑腿代购"
-        },
-        {
-            "img": "./images/pic6.png",
-            "title": "早餐"
-        },
-        {
-            "img": "./images/pic7.png",
-            "title": "甜点饮品"
-        },
-        {
-            "img": "./images/pic8.png",
-            "title": "家常菜"
-        },
-        {
-            "img": "./images/pic9.png",
-            "title": "减免派送费"
-        },
-        {
-            "img": "./images/pic10.png",
-            "title": "品牌连锁"
-        },
-        {
-            "img": "./images/pic1.png",
-            "title": "美食"
-        },
-        {
-            "img": "./images/pic2.png",
-            "title": "超市便利"
-        },
-        {
-            "img": "./images/pic3.png",
-            "title": "生鲜果蔬"
-        },
-        {
-            "img": "./images/pic4.png",
-            "title": "美团专送"
-        },
-        {
-            "img": "./images/pic5.png",
-            "title": "跑腿代购"
-        },
-        {
-            "img": "./images/pic6.png",
-            "title": "早餐"
-        },
-        {
-            "img": "./images/pic7.png",
-            "title": "甜点饮品"
-        },
-        {
-            "img": "./images/pic8.png",
-            "title": "家常菜"
-        },
-        {
-            "img": "./images/pic9.png",
-            "title": "减免派送费"
-        },
-        {
-            "img": "./images/pic10.png",
-            "title": "品牌连锁"
-        }
-    ]
-}]
+        "list": [{
+                "url": "./images/pic1.png",
+                "title": "美食"
+            },
+            {
+                "url": "./images/pic2.png",
+                "title": "猫眼电影"
+            },
+            {
+                "url": "./images/pic3.png",
+                "title": "酒店"
+            },
+            {
+                "url": "./images/pic4.png",
+                "title": "酒店"
+            },
+            {
+                "url": "./images/pic5.png",
+                "title": "美食"
+            },
+            {
+                "url": "./images/pic6.png",
+                "title": "休闲娱乐"
+            },
+            {
+                "url": "./images/pic7.png",
+                "title": "外卖"
+            },
+            {
+                "url": "./images/pic8.png",
+                "title": "KTV"
+            },
+            {
+                "url": "./images/pic9.png",
+                "title": "丽人"
+            },
+
+            {
+                "url": "./images/pic1.png",
+                "title": "美食"
+            }
+
+        ]
+    },
+    {
+        "list": [{
+                "url": "./images/pic1.png",
+                "title": "美食"
+            },
+            {
+                "url": "./images/pic6.png",
+                "title": "猫眼电影"
+            },
+            {
+                "url": "./images/pic3.png",
+                "title": "酒店"
+            },
+
+            {
+                "url": "./images/pic9.png",
+                "title": "美食"
+            },
+            {
+                "url": "./images/pic6.png",
+                "title": "休闲娱乐"
+            },
+            {
+                "url": "./images/pic7.png",
+                "title": "外卖"
+            },
+            {
+                "url": "./images/pic8.png",
+                "title": "KTV"
+            },
+            {
+                "url": "./images/pic9.png",
+                "title": "丽人"
+            },
+            {
+                "url": "./images/pic1.png",
+                "title": "火车票"
+            },
+            {
+                "url": "./images/pic10.png",
+                "title": "美食"
+            }
+
+        ]
+    }
+]

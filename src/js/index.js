@@ -4,43 +4,53 @@ $.ajax({
     dataType: "json",
     success: function(res) {
         if (res.code == 0) {
-            renderList(res.data)
+            renderSwiper(res.data)
+
         }
     }
 })
 
-
-function renderList(data) {
+function renderSwiper(data) {
     var str = "";
     data.forEach((i) => {
-        //     str += `
-        //         <div class="swiper-slide">`
-        //     str += renderDatas(i.list)
-        //     str += `</div>
-        //    `;
-        console.log(i.list)
+        str = `<div class="swiper-slide">`
+        str += renderList(i.list);
+        str + `</div>`;
     })
-
     $("#boxWrap").html(str);
-
-    var Swiper = new Swiper("#boxWrap", {
-        navigation: {
-            prevEl: "#prev",
-            nextEl: "#next"
+    new Swiper("#boxWrap", {
+        autoplay: true,
+        slidesPerView: 1,
+        // 显示几张图片
+        slidesPerGround: 1,
+        loop: true,
+        direction: "horizontal",
+        autoplay: {
+            delay: 1000,
         },
         pagination: {
-            el: "#round",
+            el: "#paginAtion",
             clickable: true
         }
+
     })
 }
 
 
-function renderDatas(data) {
-    return data.map((i) => {
+
+function renderList(datas) {
+    return datas.map((i) => {
         return `<li>
-                    <img src="${i.img}" alt="">
-                    <p>${i.title}</p>
-                </li>`
+            <img src="${i.url}" alt="">
+            <p>${i.title}</p>
+        </li>`;
     }).join("");
 }
+
+var bscroll = new BScroll(".wrapper", {
+    scrolX: true
+})
+
+$("#footer span").on("click", function() {
+    $(this).addClass("active").siblings().removeClass("active")
+})
