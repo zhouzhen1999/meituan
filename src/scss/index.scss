@@ -115,3 +115,34 @@ section {
         margin-left: .2rem;
     }
 }
+
+.swiper-slide {
+    @include num(90%,
+    auto);
+    display: flex;
+    padding: 0 .15rem;
+    flex-wrap: wrap;
+    li {
+        @include num(18%,
+        auto);
+        margin-left: .05rem;
+        margin-top: .1rem;
+        text-align: center;
+        img {
+            @include num(80%,
+            auto);
+        }
+    }
+}
+
+.section-list {
+    margin-top: .2rem;
+}
+
+#round {
+    position: relative;
+    top: .05rem;
+    span {
+        background: #FFCA48;
+    }
+}
