@@ -13,25 +13,12 @@ $.ajax({
 function renderSwiper(data) {
     var str = "";
     data.forEach((i) => {
-        str = `<div class="swiper-slide">`
+        str += `<div class="swiper-slide">`
         str += renderList(i.list);
-        str + `</div>`;
+        str += `</div>`;
     })
     $("#boxWrap").html(str);
     new Swiper("#boxWrap", {
-        autoplay: true,
-        slidesPerView: 1,
-        // 显示几张图片
-        slidesPerGround: 1,
-        loop: true,
-        direction: "horizontal",
-        autoplay: {
-            delay: 1000,
-        },
-        pagination: {
-            el: "#paginAtion",
-            clickable: true
-        }
 
     })
 }
@@ -48,9 +35,25 @@ function renderList(datas) {
 }
 
 var bscroll = new BScroll(".wrapper", {
-    scrolX: true
+    scrollX: true
 })
 
 $("#footer span").on("click", function() {
     $(this).addClass("active").siblings().removeClass("active")
+})
+
+$(".one").on("click", function() {
+    $(".box2").hide();
+    $(".box1").show();
+    $(".box3").hide();
+})
+$(".two").on("click", function() {
+    $(".box1").hide();
+    $(".box2").show();
+    $(".box3").hide();
+})
+$(".three").on("click", function() {
+    $(".box1").hide();
+    $(".box3").show();
+    $(".box2").hide();
 })
