@@ -90,18 +90,21 @@ section {
     border: none;
     margin-left: .2rem; }
 
+#contain,
 .swiper-slide {
   width: 90%;
   height: 2rem;
   display: flex;
   padding: 0 .15rem;
   flex-wrap: wrap; }
+  #contain li,
   .swiper-slide li {
     width: 18%;
     height: auto;
     margin-left: .05rem;
     margin-top: .1rem;
     text-align: center; }
+    #contain li img,
     .swiper-slide li img {
       width: 80%;
       height: auto; }
